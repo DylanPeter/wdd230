@@ -5,10 +5,23 @@ body {
   color: #333; /* Set your preferred text color */
   line-height: 1.6;
   margin: 0;
+
   
 }
 h1 { 
   padding-left: 25px;
+}
+h2 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 0;
+  padding: 0rem;
+}
+h3 {
+  background-color: #9EF8EE;
+  margin: 0;
+  padding: .5rem;
+  border-radius: 0.45rem ;
 }
 
 /* Center the main element horizontally with limited width */
@@ -19,17 +32,28 @@ main {
 
 /* Style header */
 header {
-  /* text-align: center; */
-  padding: 20px 0;
+  text-align: center;
+  width: 100%;
   display: flex;
-  /* align-items: center; */
-  /* margin-left: 20px; */
-  background-color: #78DDFF;
+  justify-content: center;
+  background-color: #22BABB;
+}
+header img {
+  margin: 1rem;
+  padding: 0;
+  max-width: 8rem;
 }
 
+header h1 {
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Style navigation */
 nav {
-  background-color: #007BFF; /* Set your preferred background color */
+  background-color: #348888; /* Set your preferred background color */
   padding: 10px;
   text-align: center;
 }
@@ -37,6 +61,8 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
@@ -60,7 +86,7 @@ main {
 .card {
   background-color: #FFF; /* Set your preferred card background color */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: .5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
@@ -72,10 +98,8 @@ footer {
 }
 
 img {
-    width: 10%;
-    /* grid-row: 1/5;
-    grid-column: 0/2; */
-    /* display: inline-block; */
+    width: 130px;
+    height: 100px;
     margin-left: 500px;
     padding-left: 50px;
     text-align: center;
