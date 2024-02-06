@@ -26,7 +26,9 @@ Fonts are separated by a | */
   --nav-hover-background-color: #FFCAB1;
 }
 
-
+p {
+  justify-content: center;
+}
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
