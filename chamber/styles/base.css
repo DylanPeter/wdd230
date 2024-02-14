@@ -23,7 +23,7 @@ button {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-img {
+header img {
     width: 300px;
     height: 100px;
 }
@@ -31,6 +31,7 @@ img {
     display: inline-block;
     margin: 10px;
     font-size: 25px;
+    flex-direction: row;
 }
 a:hover {
     background-color: #ECDCB0;
