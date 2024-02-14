@@ -64,7 +64,8 @@ main {
     font-size: 18px;
 }
 .section2 img {
-    height: auto;
+    width: 200px;
+    height: 200px;
     padding-left: 350px;
     
 }
