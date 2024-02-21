@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <img src="images/vegaschamber.png" alt="logo">
+            <img src="images/vegaschamber.webp" alt="logo">
             <h1>Las Vegas Chamber of Commerce</h1>
             <button onclick="myFunction()">Toggle dark mode</button>
         <nav class="navigation">
@@ -21,7 +21,12 @@
         </nav>
     </header>
     <section class="section1">
-        <img class= "hero" src="images/hero.jpeg" alt="Main pic of las vegas">
+        <picture>
+            <source media="(max-width: 425px)" srcset="./images/hero-smol.webp">
+            <source media="(max-width: 1023px)" srcset="./images/hero-mid.webp">
+            <source media="(min-width: 1024px)" srcset="./images/hero-large.webp">
+            <img class= "hero" src="./images/hero-large.webp" alt="Main pic of las vegas" style="width: auto;">
+        </picture>
     </section>
     <hr>
 
@@ -36,8 +41,10 @@
         <section class="section3"> 
             <h3>Weather</h3>
             <p>☀️ Mostly Sunny </p>
-            <p>89°</p>
+            <p>Temperature: 45°</p>
             <p>Humidity: 3%</p>
+            <p>Windspeed: 5.0 mph </p>
+            <p>Windchill: </p>
         </section>
     </section>
 </main>
@@ -60,5 +67,6 @@
         <p>Phone: 123-456-7891</p>
 </footer>
 <script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
