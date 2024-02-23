@@ -29,9 +29,9 @@
     </header>
     <section class="section1">
         <picture>
-            <source media="(max-width: 425px)" srcset="./images/hero-smol.webp">
-            <source media="(max-width: 1023px)" srcset="./images/hero-mid.webp">
-            <source media="(min-width: 1024px)" srcset="./images/hero-large.webp">
+            <source media="(max-width: 425px)" srcset="./images/hero-smol.webp" loading lazy="lazy">
+            <source media="(max-width: 1023px)" srcset="./images/hero-mid.webp"loading lazy="lazy">
+            <source media="(min-width: 1024px)" srcset="./images/hero-large.webp"loading lazy="lazy">
             <img class= "hero" src="./images/hero-large.webp" alt="Main pic of las vegas" style="width: auto;">
         </picture>
     </section>
@@ -46,12 +46,13 @@
             <img src="images/trees.jpeg" alt="trees" style="width: auto;">
         </section>
         <section class="section3"> 
-            <h3>Weather</h3>
+            <h3>Information</h3>
             <p>☀️ Mostly Sunny </p>
             <p>Temperature: 45°</p>
             <p>Humidity: 3%</p>
             <p>Windspeed: 5.0 mph </p>
             <p>Windchill: </p>
+            <p> <span class="label"> Number of Visits: </span><span class="visits"></span></p>
         </section>
     </section>
 </main>
