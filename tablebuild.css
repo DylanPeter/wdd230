@@ -1,0 +1,26 @@
+caption {
+    caption-side: bottom;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid pink;
+}
+th {
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem;
+
+
+}
+td {
+    padding: 0.5rem;
+    border: 1px solid pink;
+}
+thead tr:nth-child(2) th {
+    background-color: #999;
+}
+thead tr:nth-child(2) th:first-child {
+    background-color: #000;
+}

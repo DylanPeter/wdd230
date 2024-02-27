@@ -22,3 +22,68 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+// Get the last visit date from localStorage or set it to null if it doesn't exist
+let lastVisit = localStorage.getItem('lastVisit');
+
+// Get the current date
+let currentDate = new Date();
+
+// Display messages based on the time between visits
+if (!lastVisit) {
+    // If this is the user's first visit
+    document.getElementById('message').textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    // Convert lastVisit from string to Date object
+    lastVisit = new Date(lastVisit);
+
+    // Calculate the time difference in milliseconds
+    let timeDifference = currentDate - lastVisit;
+    // Convert milliseconds to days
+    let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        // If less than a day has passed since the last visit
+        document.getElementById('message').textContent = "Back so soon! Awesome!";
+    } else {
+        // If more than a day has passed since the last visit
+        let message;
+        if (daysDifference === 1) {
+            message = "day";
+        } else {
+            message = "days";
+        }
+        document.getElementById('message').textContent = `You last visited ${daysDifference} ${message} ago.`;
+    }
+}
+
+// Store the current visit date in localStorage
+localStorage.setItem('lastVisit', currentDate);
+
+// Display messages based on the time between visits in the sidebar content area
+if (!lastVisit) {
+    // If this is the user's first visit
+    document.getElementById('sidebarContent').textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    // Convert lastVisit from string to Date object
+    lastVisit = new Date(lastVisit);
+
+    // Calculate the time difference in milliseconds
+    let timeDifference = currentDate - lastVisit;
+    // Convert milliseconds to days
+    let daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        // If less than a day has passed since the last visit
+        document.getElementById('sidebarContent').textContent = "Back so soon! Awesome!";
+    } else {
+        // If more than a day has passed since the last visit
+        let message;
+        if (daysDifference === 1) {
+            message = "day";
+        } else {
+            message = "days";
+        }
+        document.getElementById('sidebarContent').textContent = `You last visited ${daysDifference} ${message} ago.`;
+    }
+}
+
