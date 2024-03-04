@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Las Vegas Chamber of Commerce</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="./images/vegaschamber.png" type="image/x-icon">
+
+        <meta property="og:title" content="Your Page Title">
+        <meta property="og:description" content="Your page description">
+        <meta property="og:image" content="URL to your image">
+        <meta property="og:url" content="URL of your page">
+        <meta property="og:type" content="website">
+    </head>
+    <body>
+        <header>
+            <img src="images/vegaschamber.webp" alt="logo">
+            <h1>Las Vegas Chamber of Commerce</h1>
+            <button onclick="myFunction()">Toggle dark mode</button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discovery</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        </header>
+    
+        <form action="thankyou.html" method="get">
+            <!-- firstname -->
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+    
+            <!-- lastname -->
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+    
+            <!-- position -->
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position" required><br><br>
+    
+            <!-- Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="A valid byui.edu email address"><br><br>
+    
+            <!-- Phone Number -->
+            <label for="phonenumber">Phone Number:</label><br>
+            <input type="text" id="phonenumber" name="phonenumber" required><br><br>
+            
+            <label for="business">Business/Organization:</label><br>
+            <input type="text" id="business" name="business" required><br><br>
+
+            <!-- Membership levels -->
+            <p>Please select any that apply to you:</p>
+            <label for="membership-level1"> NP Membership is for non profit organizations and there is no fee.</label><br>
+            <input type="checkbox" id="membership-level1" name="membership-level" ><br><br>
+            
+            <label for="membership-level2"> Bronze Membership</label><br>
+            <input type="checkbox" id="membership-level2" name="membership-level" ><br><br>
+            
+            <label for="membership-level3">Silver Membership</label><br>
+            <input type="checkbox" id="membership-level3" name="membership-level" ><br><br>
+
+            <label for="membership-level4"> Gold Membership</label><br>
+            <input type="checkbox" id="membership-level4" name="membership-level" ><br><br>
+
+            <label for="business-description">Please provide a description of your business:</label><br>
+            <input type="text" id="business-description" name="business-description" ><br><br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+</main>
+<footer>
+    <h4> Follow our socials!</h4>
+    <div class="socials">
+        <a href="https://www.facebook.com/vegaschamber/" target="_blank">
+            <img src="images/facebook copy.png" alt="facebook icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram copy.png" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flvchamber" target="_blank">
+            <img src="images/twitter copy.png" alt="twitter icon">
+        </a>
+    </div>
+    <section class="section5">
+        <p>Email: fakeemail@gmail.com</p>
+        <p>Phone: 123-456-7891</p>
+</footer>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
+    </body>
+</html>
