@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Company A",
+        "address": "123 Main St, City, State",
+        "phone": "123-456-7890",
+        "website": "https://www.companyA.com",
+        "image": "companyA.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company B",
+        "address": "456 Elm St, City, State",
+        "phone": "987-654-3210",
+        "website": "https://www.companyB.com",
+        "image": "companyB.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company C",
+        "address": "123 Main St, City, State",
+        "phone": "123-456-7890",
+        "website": "https://www.companyA.com",
+        "image": "companyC.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company D",
+        "address": "456 Elm St, City, State",
+        "phone": "987-654-3210",
+        "website": "https://www.companyB.com",
+        "image": "companyD.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company E",
+        "address": "123 Main St, City, State",
+        "phone": "123-456-7890",
+        "website": "https://www.companyA.com",
+        "image": "companyE.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company F",
+        "address": "456 Elm St, City, State",
+        "phone": "987-654-3210",
+        "website": "https://www.companyB.com",
+        "image": "companyF.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company G",
+        "address": "123 Main St, City, State",
+        "phone": "123-456-7890",
+        "website": "https://www.companyA.com",
+        "image": "companyG.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "name": "Company H",
+        "address": "456 Elm St, City, State",
+        "phone": "987-654-3210",
+        "website": "https://www.companyB.com",
+        "image": "companyH.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]

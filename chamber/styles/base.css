@@ -183,7 +183,7 @@ figcaption {
     
   
 }
-figure img:hover {
+figure Zaimg:hover {
     box-shadow: 0 0 50px #333;
 }
 
@@ -255,5 +255,30 @@ output {
     display: inline-block;
     margin-left: 10px;
 }
+/* Directory Page */
+.members-list {
+    list-style-type: none;
+    padding: 0;
+}
 
+.member-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.member-item img {
+    display: block;
+    margin: 10px auto;
+}
+
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
 
