@@ -85,18 +85,19 @@ h2 {
 /* hr {
 
 } */
-.section3 {
+#weather-info {
     grid-column: 2/3;
     background-color: #FFCAB1;
     border-radius: 1rem;
     margin: 10px;
+
 }
-.section3 p {
-    padding-left: 15px;
+#weather-info p {
     font-size: 20px;
     font-family: "roboto slab";
     font-weight: 300;
     font-size: 18px;
+    text-align: center;
 }
 h3 { 
     text-align: center;

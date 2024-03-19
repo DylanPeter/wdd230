@@ -18,15 +18,16 @@
             <img src="images/vegaschamber.webp" alt="logo">
             <h1>Las Vegas Chamber of Commerce</h1>
             <button onclick="myFunction()">Toggle dark mode</button>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discovery</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="navigation">
+                <ul>
+                    <p> <span class="label"> Number of Visits: </span><span class="visits"></span></p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
     <section class="section1">
         <picture>
             <source media="(max-width: 425px)" srcset="./images/hero-smol.webp" loading lazy="lazy">
@@ -46,14 +47,13 @@
                 <p>Location: Floyd Lamb Park </p>
                 <img src="images/trees.jpeg" alt="trees" style="width: auto;">
             </section>
-            <section class="section3"> 
-                <h3>Information</h3>
-                <p>☀️ Mostly Sunny </p>
-                <p>Temperature: 45°</p>
-                <p>Humidity: 3%</p>
-                <p>Windspeed: 5.0 mph </p>
-                <p>Windchill: </p>
-                <p> <span class="label"> Number of Visits: </span><span class="visits"></span></p>
+                <div id="weather-info">
+                    <h2>Current Weather</h2>
+                    <p id="current-temp"></p>
+                    <p id="weather-description"></p>
+                    <h2>Three Day Forecast</h2>
+                    <ul id="forecast-list"></ul>
+                </div>
             </section>
         </div>    
 </main>
@@ -77,5 +77,6 @@
 </footer>
 <script src="scripts/scripts.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
 </body>
 </html>
