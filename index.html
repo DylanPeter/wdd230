@@ -56,15 +56,22 @@
         </section>
         <section class="card">
             <h3> Information </h3>
-            <h4> ☀️ Las Vegas, Nevada </h4>
-            <p> Visits to page: </p>
+            <div id="weather-info">
+                <figure>
+                  <img id="weather-icon" src="" alt="Weather Icon">
+                  <figcaption></figcaption>
+                </figure> 
+                <p id="current-temp"></p>
+                <p id="weather-description"></p>
+                <!-- <div id="forecast-list"></div> -->
+            </div>
         </section>
     </main>
     <footer>
         <p> &copy; <span id="currentYear"></span> Dylan Petersen Nevada </p>
         <p id="lastModified"></p> 
     </footer>
-
+    <script src="scripts/home-weather.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 </html>

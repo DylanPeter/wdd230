@@ -283,3 +283,8 @@ output {
     grid-gap: 20px;
 }
 
+/* banner css */
+#banner-content{
+    display: flex;
+    justify-content: space-between;
+}
