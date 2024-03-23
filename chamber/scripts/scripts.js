@@ -87,3 +87,9 @@ if (!lastVisit) {
     }
 }
 
+
+
+function toggleMenu() {
+    var nav = document.querySelector('.navigation ul');
+    nav.style.display = (nav.style.display === 'none') ? 'block' : 'none';
+}

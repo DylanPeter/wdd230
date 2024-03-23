@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Directory of Members - Las Vegas Chamber of Commerce</title>
+        <title>Las Vegas Chamber of Commerce</title>
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/smaller.css">
+
         <link rel="icon" href="./images/vegaschamber.png" type="image/x-icon">
 
         <meta property="og:title" content="Your Page Title">
@@ -18,6 +21,8 @@
             <img src="images/vegaschamber.webp" alt="logo">
             <h1>Las Vegas Chamber of Commerce</h1>
             <button onclick="myFunction()">Toggle dark mode</button>
+            <button class="hamburger" onclick="toggleMenu()">☰</button> <!-- Hamburger button -->
+
             <nav class="navigation">
                 <ul>
                     <p> <span class="label"> Number of Visits: </span><span class="visits"></span></p>
@@ -38,7 +43,7 @@
         <picture>
             <source media="(max-width: 425px)" srcset="./images/hero-smol.webp" loading lazy="lazy">
             <source media="(max-width: 1023px)" srcset="./images/hero-mid.webp"loading lazy="lazy">
-            <source media="(min-width: 1024px)" srcset="./images/hero-large.webp"loading lazy="lazy">
+            <source media="(min-width: 1440px)" srcset="./images/hero-large.webp"loading lazy="lazy">
             <img class= "hero" src="./images/hero-large.webp" alt="Main pic of las vegas" style="width: auto;">
         </picture>
     </section>
@@ -48,10 +53,17 @@
         <div class="mainsection">
             <section class="section2"> 
                 <h2>Events</h2>
+                <button class="join"><a href="./join.html">Join</a></button> <!-- Hamburger button -->
                 <p>Join us at our beautiful park at Floyd Lamb Park and help us plant tons of trees!</p>
                 <p>When: March 23, 2023 at noon.</p>
                 <p>Location: Floyd Lamb Park </p>
                 <img src="images/trees.jpeg" alt="trees" style="width: auto;">
+            </section>
+            <section class="section3"> 
+                <h2>Gold Level Members</h2>
+                <div id="gold-members">
+                    <!-- Gold level member cards will be inserted here dynamically -->
+                </div>
             </section>
                 <div id="weather-info">
                     <h2>Current Weather</h2>
@@ -64,7 +76,10 @@
         </div>    
 </main>
 <footer>
-    <h4> Follow our socials!</h4>
+        <p>Created by: Dylan Petersen</p>
+        <p>Course: WDD 230</p>
+        <!-- <p>Last modified: <span id="lastModified"></span></p> -->
+        <p id="lastModified"></p>
     <div class="socials">
         <a href="https://www.facebook.com/vegaschamber/" target="_blank">
             <img src="images/facebook.png" alt="facebook icon">
@@ -78,11 +93,13 @@
     </div>
     
     <section class="section5">
-        <p>Email: fakeemail@gmail.com</p>
-        <p>Phone: 123-456-7891</p>
+        <p>Email: petersendylan2000@gmail.com</p>
+        <p>Phone: 725-249-7357</p>
 </footer>
-<script src="scripts/banner.js"></script>
+<script src="scripts/membershipShowcase.js"></script>
+<script src="scripts/lastmodified.js"></script>
 <script src="scripts/scripts.js"></script>
+<script src="scripts/banner.js"></script>
 <script src="scripts/windchill.js"></script>
 <script src="scripts/weather.js"></script>
 </body>

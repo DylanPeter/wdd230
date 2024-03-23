@@ -1,5 +1,4 @@
-// document.lastModified;
-// returns: Tuesday, December 16, 2017 11:09:42
+document.lastModified;
 
 // Dynamically populate the current year in the footer's first paragraph
 document.getElementById('currentYear').innerText = new Date().getFullYear();
