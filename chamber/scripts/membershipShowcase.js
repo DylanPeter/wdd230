@@ -9,13 +9,13 @@ async function fetchChamberMembers() {
 }
 const chamberMembers = [
     {
-        "name": "Company A",
-        "address": "123 Main St, City, State",
-        "phone": "123-456-7890",
-        "website": "https://www.companyA.com",
-        "image": "companyA.jpg",
+        "name": "MGM Resorts International",
+        "address": "3600 S Las Vegas Blvd Bellagio Hotel & Casino,",
+        "phone": "1855-788-6775",
+        "website": "https://www.mgmresorts.com/",
+        "image": "./images/mgm.jpeg",
         "membershipLevel": "Gold",
-        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "otherInfo": "The best place to come and relax and enjoy the wonderful city of Las Vegas."
     },
     // Include more member data here...
 ];
@@ -28,12 +28,13 @@ const goldMemberContainer = document.getElementById('gold-members');
 goldMembers.slice(0, 3).forEach(member => {
     const memberCard = `
         <div class="member-card">
-            <img src="images/${member.image}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>Phone: ${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">Website</a></p>
-            <p>${member.otherInfo}</p>
+        <h2>${member.name}</h2>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+        <img src="${member.image}" alt="${member.name}" width="300" height="100"> <!-- Update this line -->
+        <p>Membership Level: ${member.membershipLevel}</p>
+        <p>${member.otherInfo}</p>
         </div>
     `;
     goldMemberContainer.innerHTML += memberCard;
