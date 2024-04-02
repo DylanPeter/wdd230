@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:description" content="To sell people smoothies">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://dylanpeter.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Dylan Petersen">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+
+<nav class="navigation">
+    <div class="container">
+        <div class="nav-header">
+            <button type="button" class="nav-toggle" id="nav-toggle">☰</button>
+            <a href="index.html" class="logo">Bountiful Foods</a>
+        </div>
+        <div class="nav-collapse" id="nav-collapse">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="confirm.html">Confirm</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+    <form action="confirmation.html" method="get">
+        <!-- Username -->
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <!-- Phone number -->
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <!-- Fruits -->
+        <p>Please select 3 fruits for your drink.</p>
+        <br>
+        <label for="fruit1">Fruit 1</label>
+        <select id="fruit1" name="fruit1" class="fruit-dropdown" required>
+            <option value="">Select one of the following</option>
+        </select><br><br>
+
+        <label for="fruit2">Fruit 2</label>
+        <select id="fruit2" name="fruit2" class="fruit-dropdown" required>
+            <option value="">Select one of the following</option>
+        </select><br><br>
+
+        <label for="fruit3">Fruit 3</label>
+        <select id="fruit3" name="fruit3" class="fruit-dropdown" required>
+            <option value="">Select one of the following</option>
+        </select><br><br>
+
+         <!-- special istructions -->
+        <label for="special-instructions"></label>
+        <textarea name="special-instructions" id="special-instructions" cols="40" rows="5"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Order">
+    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="resources">
+                    <p>Resources:</p>
+                    <ul>
+                        <li><a href="https://www.fruityvice.com" target="_blank">Fruityvice</a></li>
+                        <li><a href="https://openweathermap.org" target="_blank">OpenWeatherAPI</a></li>
+                    </ul>
+                    <p id="last-modified"></p>
+                </div>
+                <div class="socials">
+                    <p>Connect with us:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <p>Contact us</p>
+                    <p>Email: bountifulfoods@gmail.com</p>
+                    <p>Phone: 123-456-7891</p>
+                    <p>Address: 723 Smoothie Place, Carlsbad, CA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
