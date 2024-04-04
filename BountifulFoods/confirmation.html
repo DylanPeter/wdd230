@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:description" content="To sell people smoothies">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://dylanpeter.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Dylan Petersen">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-header">
+                <button type="button" class="nav-toggle" id="nav-toggle">☰</button>
+                <a href="index.html" class="logo">Bountiful Foods</a>
+            </div>
+            <div class="nav-collapse" id="nav-collapse">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="confirm.html">Confirm</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<body>
+    <!-- order confirmation -->
+    <main class="confirm-container">
+        <section class="order-details">
+            <section class="confirmation">
+                <h1>Order Confirmation</h1>
+            </section>
+<!-- Order Submission -->
+        <section class="thank-you">
+            <h2>Thank you for your order!</h2>
+            <h4>Your order has been submitted and will be processed shortly!</h4> 
+            <p>Submission date: <span id="submission-date"></span></p>
+        </section>
+        <br>
+
+        <section class="card" id="order-number">
+            <h3>Order Number: <span id="random-number"></span></h3>
+        </section>
+        <br>
+<!-- pick up deats -->
+        <section class="card" id="pick-up">
+            <h4>Details</h4>
+            <p>Your order will be ready shortly. Patience is a virture.</p>
+            <p> <strong>Address: 723 Smoothie Place, Carlsbad, CA </strong></p>
+            <p>If you have any questions or problems with your order, please give us a call at: <strong>123-456-7891</strong></p>
+        </section>
+        <br>
+<!-- personal info -->
+        <section class="personal-info" id="order">
+            <h3>Here is waht you told us</h3>
+            <h4>Name: <span id="yourname"></span></h4>
+            <h4>Email: <span id="youremail"></span></h4>
+            <h4>Phone: <span id="yourphone"></span></h4>
+        </section>
+        <br>
+<!-- nut info -->
+        <section class="nut-facts" >
+            <h3>Here is how your order looks</h3>
+            <h4>Total Calories:  <span id="total-calories"></span></h4>
+            <h4>Total Fat:  <span id="total-fat"></span></h4>
+            <h4>Total Sugar:  <span id="total-sugar"></span></h4>
+            <h4>Total Carbohydrates:  <span id="total-carbohydrates"></span></h4>
+            <h4>Total Protein:  <span id="total-protein"></span></h4>
+        </section>
+        <br>
+<!-- payment -->
+        <section class="card" id="payment">
+            <h4>Payment is collected when your drink order is placed.</h4>
+            <p>For refund information, please refer to your email or give us a call. <strong>123-456-7891</strong></p>
+            <h4>We accept: 
+                <span title="Cash">&#128184;</span>
+                <span title="Card">&#128179;</span> 
+            </h4>
+        </section>
+        <br>
+<!-- personal thanks -->
+        <section class="personal-thanks" >
+            <p>Hey! Thanks for placing an order with us. 10% of all proceeds go towards the Feeding America charity! 
+                Each one us can make a difference in this world.
+            </p>
+        </section>
+    </section>
+<!-- summary  -->
+    <section class="order-summary">
+        <section class="card" id="order-info">
+            <h3>Your order summary</h3>
+            <h4>Fruit 1: <span id="yourfruit1"></span></h4>
+            <h4>Fruit 2: <span id="yourfruit2"></span></h4>
+            <h4>Fruit 3: <span id="yourfruit3"></span></h4>
+            <h4>Special Instructions: <span id="yourspecialinstructions"></span></h4>
+        </section>
+        <section class="pay" id="payment-info">
+            <h4>SubTotal: <span>$0.00</span></h4>
+            <h4>Tax: <span>$0.00</span></h4>
+            <h4>Shipping: <span><strong>N/A</strong></span></h4>
+            <h4>Total: <span>$0.00</span></h4>
+        </section>
+    </section>
+    </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="resources">
+                        <p>Resources:</p>
+                        <ul>
+                            <li><a href="https://www.fruityvice.com" target="_blank">Fruityvice</a></li>
+                            <li><a href="https://openweathermap.org" target="_blank">OpenWeatherAPI</a></li>
+                        </ul>
+                        <p id="last-modified"></p>
+                    </div>
+                    <div class="socials">
+                        <p>Connect with us:</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <p>Contact us</p>
+                        <p>Email: bountifulfoods@gmail.com</p>
+                        <p>Phone: 123-456-7891</p>
+                        <p>Address: 723 Smoothie Place, Carlsbad, CA</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
