@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Las Vegas Chamber of Commerce</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/smaller.css">
+
+        <link rel="icon" href="./images/vegaschamber.png" type="image/x-icon">
+
+        <meta property="og:title" content="Las Vegas Chamber of Commerce">
+        <meta property="og:description" content="To tell people about the city of Las Vegas and how to get involved">
+        <meta property="og:image" content="./images/vegaschamber.png">
+        <meta property="og:url" content="https://dylanpeter.github.io/wdd230/">
+        <meta property="og:type" content="website">
+        <meta name="author" content="Dylan Petersen">
+    </head>
+    <body>
+        <header>
+            <img src="images/vegaschamber.webp" alt="logo">
+            <h1>Las Vegas Chamber of Commerce</h1>
+            <button onclick="myFunction()">Toggle dark mode</button>
+            <button class="hamburger" onclick="toggleMenu()">☰</button> <!-- Hamburger button -->
+
+            <nav class="navigation" >
+                <ul>
+                    <p> <span class="label"> Number of Visits: </span><span class="visits"></span></p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="banner" class="banner">
+            <div class="banner-content">
+                <span class="close" id="closeBanner">&times;</span>
+                <p>Don't miss our Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            </div>
+        </div>
+    <section class="section1">
+        <picture>
+            <source media="(max-width: 425px)" srcset="./images/hero-smol.webp" loading lazy="lazy">
+            <source media="(max-width: 1023px)" srcset="./images/hero-mid.webp"loading lazy="lazy">
+            <source media="(min-width: 1440px)" srcset="./images/hero-large.webp"loading lazy="lazy">
+            <img class= "hero" src="./images/hero-large.webp" alt="Main pic of las vegas" style="width: auto;">
+        </picture>
+    </section>
+    <hr>
+
+    <main>
+        <div class="mainsection">
+            <section class="section2"> 
+                <h2>Events</h2>
+                <button class="join"><a href="./join.html">Join</a></button> 
+                <p>Join us at our beautiful park at Floyd Lamb Park and help us plant trees!</p>
+                <p>When: March 23, 2023 at noon.</p>
+                <p>Location: Floyd Lamb Park </p>
+                <img src="images/trees.jpeg" alt="trees" style="width: auto;">
+            </section>
+            <section class="section3"> 
+                <h2>Gold Level Members</h2>
+                <div id="gold-members">
+                    <!-- Gold level member cards will be inserted here dynamically -->
+                </div>
+            </section>
+                <div id="weather-info">
+                    <h2>Current Weather</h2>
+                    <p id="current-temp"></p>
+                    <p id="wind-chill-info">Wind Chill: <span id="wind-chill-value">0</span> °F</p>
+                    <p id="weather-description"></p>
+                    <h2>Three Day Forecast</h2>
+                    <ul id="forecast-list">
+                        <li>Day 1 Forecast: Sunny</li>
+                        <li>Day 2 Forecast: Cloudy</li>
+                        <li>Day 3 Forecast: Rainy</li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>    
+</main>
+<footer>
+        <p>Created by: Dylan Petersen</p>
+        <p>Course: WDD 230</p>
+        <!-- <p>Last modified: <span id="lastModified"></span></p> -->
+        <p id="lastModified"></p>
+    <div class="socials">
+        <a href="https://www.facebook.com/vegaschamber/" target="_blank">
+            <img src="images/facebook.png" alt="facebook icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flvchamber" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+    </div>
+    
+    <section class="section5">
+        <p>Email: petersendylan2000@gmail.com</p>
+        <p>Phone: 725-249-7357</p>
+</footer>
+<script src="scripts/membershipShowcase.js"></script>
+<script src="scripts/lastmodified.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/banner.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
+</body>
+</html>

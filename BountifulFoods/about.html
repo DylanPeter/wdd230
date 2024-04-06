@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:description" content="To sell people smoothies">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://dylanpeter.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Dylan Petersen">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<!-- this is a comment -->
+<body>
+    <header>
+        <header class="bigpic">
+            <div class="container">
+                <div class="bigpicbehind">
+                    <h1>Welcome to Bountiful Foods!</h1>
+                    <p>We got the freshest smoothies in town!</p>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-header">
+                <button type="button" class="nav-toggle" id="nav-toggle">☰</button>
+                <a href="index.html" class="logo">Bountiful Foods</a>
+            </div>
+            <div class="nav-collapse" id="nav-collapse">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="confirm.html">Confirm</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+<!-- about us section -->
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p> At Bountiful Foods, we're passionate about crafting delicious and nutritious smoothies that fuel your day with natural goodness. 
+                Located in the vibrant coastal city of Carlsbad, California, our mission is to provide refreshing blends of fresh fruits and wholesome ingredients, sourced locally whenever possible. 
+                With a commitment to quality and flavor, we strive to create a welcoming environment where health-conscious individuals can indulge in our delightful smoothie creations. 
+                Join us in our pursuit of wellness and taste the difference with Bountiful Foods.</p>
+<!-- about us images -->
+                <div class="about-images">
+                    <picture>
+                        <source srcset="./images/blueberry-smoothie-Small.webp" media="(max-width:500px)">
+                        <source srcset="./images/blueberry-smoothie-Medium.webp" media="(max-width:1000px)">
+                        <img loading="lazy" src="./images/blueberry-smoothie-Large.webp" alt="blueberry smoothie">
+                    </picture>
+                    <picture>
+                        <source srcset="./images/strawberry-banana-smoothie-Small.webp" media="(max-width:500px)">
+                        <source srcset="./images/strawberry-banana-smoothie-Medium.webp" media="(max-width:1000px)">
+                        <img loading="lazy" src="./images/strawberry-banana-smoothie-Large.webp" alt="straberry smoothie">
+                    </picture>
+                </div>
+            </section>
+<!-- google maps -->
+    <section class="google-map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.0502443019197!2d-117.3502329848022!3d33.15809398129658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc6f6c123b6fc5%3A0x5c00bea52122d2a9!2sCarlsbad%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1646252076150!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="resources">
+                    <p>Resources:</p>
+                    <ul>
+                        <li><a href="https://www.fruityvice.com" target="_blank">Fruityvice</a></li>
+                        <li><a href="https://openweathermap.org" target="_blank">OpenWeatherAPI</a></li>
+                    </ul>
+                    <p id="last-modified"></p>
+                </div>
+                <div class="socials">
+                    <p>Connect us:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <p>Contact us</p>
+                    <p>Email: bountifulfoods@gmail.com</p>
+                    <p>Phone: 123-456-7891</p>
+                    <p>Address: 723 Smoothie Place, Carlsbad, CA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/last-modified.js"></script>
+
+</body>
+</html>

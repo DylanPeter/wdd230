@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Directory of Members - Las Vegas Chamber of Commerce</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="./images/vegaschamber.png" type="image/x-icon">
+
+        <meta property="og:title" content="Your Page Title">
+        <meta property="og:description" content="Your page description">
+        <meta property="og:image" content="URL to your image">
+        <meta property="og:url" content="URL of your page">
+        <meta property="og:type" content="website">
+    </head>
+<body>
+    <header>
+        <img src="images/vegaschamber.webp" alt="logo">
+        <h1>Las Vegas Chamber of Commerce</h1>
+        <button onclick="myFunction()">Toggle dark mode</button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discovery</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <button id="toggleButton">Toggle View</button>
+    <div class="container">
+        <ul class="members-list grid-view"></ul>
+    </div>
+
+    <script>
+        function toggleView() {
+            const membersList = document.querySelector('.members-list');
+            membersList.classList.toggle('grid-view');
+        }
+
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(members => {
+                const membersList = document.querySelector('.members-list');
+
+                function createItem(member) {
+                    const item = document.createElement('li');
+                    item.classList.add('member-item');
+
+                    item.innerHTML = `
+                        <h2>${member.name}</h2>
+                        <p>${member.address}</p>
+                        <p>${member.phone}</p>
+                        <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                        <img src="${member.image}" alt="${member.name}" width="300" height="100"> <!-- Update this line -->
+                        <p>Membership Level: ${member.membershipLevel}</p>
+                        <p>${member.otherInfo}</p>
+                    `;
+
+                    return item;
+                }
+
+                members.forEach(member => {
+                    const listItem = createItem(member);
+                    membersList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching members:', error));
+
+        const toggleButton = document.getElementById('toggleButton');
+        toggleButton.addEventListener('click', toggleView);
+    </script>
+</main>
+<footer>
+    <p>Created by: Dylan Petersen</p>
+    <p>Course: WDD 230</p>
+    <!-- <p>Last modified: <span id="lastModified"></span></p> -->
+    <p id="lastModified"></p>
+<div class="socials">
+    <a href="https://www.facebook.com/vegaschamber/" target="_blank">
+        <img src="images/facebook.png" alt="facebook icon">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon">
+    </a>
+    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flvchamber" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon">
+    </a>
+</div>
+
+<section class="section5">
+    <p>Email: petersendylan2000@gmail.com</p>
+    <p>Phone: 725-249-7357</p>
+</footer>
+<script src="scripts/lastmodified.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
