@@ -37,20 +37,30 @@ body {
 }
 
 .nav-links li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin if needed */
 }
+
 
 .nav-links li a {
     color: #fff;
     text-decoration: none;
-    color: rgb(255, 158, 158);
-    font-size: 2em;
+    color: rgb(255, 48, 48);
+    font-size:1.5em;
     font-weight: bold;
     text-align: center;
+    padding-left: 10px;
+    padding: 0 10px; /* Adjust this value to increase or decrease the padding */
+    text-align: center;
+
 }
+.nav-links li a:hover {
+    background-color: #ffeac2;
+    border-radius: 1rem;
+}
+
 .navigation {
-    background-color: #fecc57;
+    background-color: #fde2a5;
     color: #fff;
     padding: 10px 0;
 }
@@ -58,7 +68,7 @@ body {
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: rgb(255, 158, 158);
+    color: rgb(255, 48, 48);
 }
 h2 {
     margin: 20px;
@@ -67,20 +77,20 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: rgb(255, 158, 158);	;
+    color: rgb(255, 48, 48);	;
 
 }
 h4 {
-    color: #fecc57;
+    color: rgb(30, 30, 30);
 }
 header p {
-    color: rgb(255, 158, 158);
+    color: rgb(255, 48, 48);
 
 }
 
 p {
     font-size: 1.2em;
-    color: rgb(255, 158, 158);;
+    color: rgb(255, 48, 48);;
 }
 
 
@@ -142,8 +152,8 @@ p {
     font-size: 20px;
 }
 .footer {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffefef;
+    color: rgb(255, 48, 48);
     padding: 30px 0;
     text-align: center;
     margin-top: 2rem;
@@ -156,16 +166,17 @@ p {
     padding: 0 20px;
 } */
 
-
+.footer ul a {
+    text-decoration: none;
+}
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.resources ul {
-    list-style: none;
-
+.contact-info {
+    padding-right: 10px;
 }
 
 .socials ul {
@@ -173,10 +184,52 @@ p {
     padding: 0;
 }
 
-.last-modified {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
+.resources p {
+    padding-left: 10px;
 }
+/* order css */
+
+/* form css */
+form {
+    margin-top: 20px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select.fruit-dropdown {
+    width: calc(100% - 22px); /* Adjust width to accommodate dropdown arrow */
+}
+
+#special-instructions {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#form-submit {
+    width: 100%;
+    background-color: #ffefef ;
+    color: rgb(255, 48, 48);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-submit:hover {
+    background-color: #ffeac2;
+    border-radius: 1rem;}
