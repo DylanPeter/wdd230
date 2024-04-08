@@ -1,0 +1,182 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.behind-hero {
+    background-color: #ffefef;
+    width: 100%;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    color: rgb(255, 158, 158);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.navigation {
+    background-color: #fecc57;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(255, 158, 158);
+}
+h2 {
+    margin: 20px;
+    text-align: center;
+    color: #ffe2e2	;
+}
+h3 {
+    text-align: center;
+    color: rgb(255, 158, 158);	;
+
+}
+h4 {
+    color: #fecc57;
+}
+header p {
+    color: rgb(255, 158, 158);
+
+}
+
+p {
+    font-size: 1.2em;
+    color: rgb(255, 158, 158);;
+}
+
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+
+}
+
+.card {
+    background-color: #ffefef	;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.order-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#drinks-ordered {
+    margin-top: 1rem;
+    font-size: 130px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.order-button:hover {
+    background-color: #555;
+}
+
+.card img:hover {
+    opacity: 0.6;
+    transition: opacity  0.3s ease-in-out;
+}
+
+#weather-description {
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resources ul {
+    list-style: none;
+
+}
+
+.socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.last-modified {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
