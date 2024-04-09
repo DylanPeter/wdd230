@@ -1,4 +1,4 @@
-/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +10,7 @@ header {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Lora;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -19,12 +19,13 @@ body {
 .hero {
     background-image: url('../images/mango-smoothie-Large.webp');
     background-size: cover;
-    background-position: top;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
 .behind-hero {
     /* background-color: #ffefef; */
     width: 100%;
+    color: #fff;
 }
 .nav-header {
     display: flex;
@@ -74,6 +75,7 @@ body {
 
 h1 {
     font-size: 3em;
+    font-weight: 500;
     margin-bottom: 10px;
     color:#5C5649;
 }
@@ -266,7 +268,6 @@ select.fruit-dropdown {
 .about-images {
     display: flex;
     justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
     margin-top: 20px; /* Add space from the text */
 }
 
@@ -297,3 +298,134 @@ select.fruit-dropdown {
     margin-bottom: 1rem;
 }
 
+/* cofirm page */
+
+.confirm-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.confirmation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.confirmation h1 {
+    color: #5C5649;
+    font-size: 3em;
+}
+
+.thank-you {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.thank-you h2 {
+    color: #5C5649;
+    font-size: 2em;
+}
+
+.thank-you h4 {
+    color: #5C5649;
+}
+
+.card {
+    background-color: #ffefef;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    color: #5C5649;
+}
+
+.card p {
+    color: #5C5649;
+}
+
+.pay {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pay h4 {
+    color: #5C5649;
+    font-size: 1.5em;
+}
+
+.personal-thanks {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.personal-thanks p {
+    color: #5C5649;
+}
+
+#order-info {
+    margin-bottom: 20px;
+}
+
+#order-info h3 {
+    color: #5C5649;
+}
+
+#order-info h4 {
+    color: #5C5649;
+}
+
+#payment-info {
+    margin-bottom: 20px;
+}
+
+#payment-info h4 {
+    color: #5C5649;
+}
+/* CSS for hamburger button */
+.nav-toggle {
+    display: none; /* Ensure the button is initially visible */
+    font-size: 25px;
+    width: 50px;
+    background-color:#5C5649 ;
+    color: #fff;
+    margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-toggle {
+        display: none; /* Hide the hamburger button by default */
+    }
+
+    .nav-links {
+        display: block ; /* Ensure nav links are displayed */
+    }
+}
+
+/* CSS for smaller screens */
+@media screen and (max-width: 767px) {
+    .nav-toggle {
+        display: block; /* Display the hamburger button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the nav links by default */
+    }
+
+    .nav-collapse.active .nav-links {
+        display: block ; /* Display nav links when .nav-collapse has .active class */
+    }
+    .contact-info {
+        text-align: center;
+        justify-content: center;
+    }
+   .footer {
+        text-align:center;
+        margin: 10px;
+   }
+   .footer ul a {
+    text-decoration: none;
+
+   }
+}

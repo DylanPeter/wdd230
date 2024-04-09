@@ -1,6 +1,9 @@
-function toggleNav() {
-    const navbarCollapse = document.getElementById("nav-collapse");
-    navbarCollapse.classList.toggle("active");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navCollapse = document.getElementById('nav-collapse');
 
-document.getElementById("nav-toggle").addEventListener("click", toggleNav);
+    navToggle.addEventListener('click', function() {
+        // console.log('Button clicked'); // Check if this message appears in the console
+        navCollapse.classList.toggle('active');
+    });
+});
